@@ -61,13 +61,11 @@ $database['main'] = array(
     'driver'	=> getenv('DB_DRIVER') ?: 'mysql',
     'hostname'	=> getenv('DB_HOST') ?: 'localhost',
     'port'		=> getenv('DB_PORT') ?: '3306',
-    'username'	=> getenv('DB_USER') ?: 'root',
-    'password'	=> getenv('DB_PASSWORD') ?: '',
-    'database'	=> getenv('DB_NAME') ?: 'mydb',
+    'username' => getenv('DB_USERNAME') ?: 'root',
+    'password'	=> getenv('DB_PASSWORD') ?: 'YOUR_PASSWORD',
+    'database' => getenv('DB_DATABASE') ?: 'mydb',
     'charset'	=> getenv('DB_CHARSET') ?: 'utf8mb4',
     'dbprefix'	=> getenv('DB_PREFIX') ?: '',
     // Optional for SQLite
     'path'      => ''
 );
-
-?>
