@@ -9,5 +9,5 @@ class Users extends Controller {
 		$this->call->view('users_list', $data);
 	}
 }
-?>
+
 
